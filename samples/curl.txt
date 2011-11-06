@@ -1,0 +1,5 @@
+//Create a job from a conversion
+curl -X POST  -F "xslFile=@config.xsl"  http://localhost:8080/plugin/prebuild/createJob/jobs/myRefJob?newJobName=myNewJob
+
+//Build the job
+curl http://localhost:8080/plugin/prebuild/build/jobs/myNewJob
