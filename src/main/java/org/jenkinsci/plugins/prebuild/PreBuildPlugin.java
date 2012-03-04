@@ -19,4 +19,13 @@ public class PreBuildPlugin extends Plugin {
     public BuildHandler getBuild() {
         return new BuildHandler();
     }
+    
+    @SuppressWarnings("serial")
+    public static class BadRequestException extends Exception {
+
+        public BadRequestException(String message) {
+            super(message);
+        }
+        
+    }
 }
